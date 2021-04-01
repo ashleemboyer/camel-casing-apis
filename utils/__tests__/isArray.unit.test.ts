@@ -25,7 +25,11 @@ describe('isArray', () => {
     expect(isArray(undefined)).toEqual(false);
   });
 
-  it('returns true for an array', () => {
+  it('returns true for a function', () => {
+    expect(isArray(jest.fn())).toEqual(false);
+  });
+
+  it('returns false for an array', () => {
     expect(isArray([])).toEqual(true);
   });
 });
