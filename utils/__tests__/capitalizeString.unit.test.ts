@@ -1,4 +1,4 @@
-import capitalizeString from '../capitalizeString';
+import { capitalizeString } from '@utils';
 
 describe('captializeString', () => {
   it('capitalizes the first letter of a string', () => {
