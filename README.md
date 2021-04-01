@@ -1,3 +1,3 @@
 # Camel Casing APIS
 
-![checks](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
+![CI checks](https://github.com/ashleemboyer/camel-casing-apis/actions/workflows/config.yaml/badge.svg)
