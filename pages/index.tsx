@@ -1,17 +1,20 @@
 import { useEffect, useState } from 'react';
-import { get } from 'utils/api';
+import { ApiResponse } from '@customTypes/apiTypes';
+import { api } from '@utils';
 import styles from '@styles/HomePage.module.scss';
 
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [data, setData] = useState();
+  const [data, setData] = useState<ApiResponse>();
 
   useEffect(() => {
-    get('https://api.openbrewerydb.org/breweries').then((res) => {
-      setData(res);
-      setIsLoading(false);
-    });
-  });
+    api
+      .get('https://api.openbrewerydb.org/breweries')
+      .then((res: ApiResponse) => {
+        setData(res.data);
+        setIsLoading(false);
+      });
+  }, []);
 
   if (isLoading) {
     return <h1>Loading...</h1>;
