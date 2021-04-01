@@ -4,7 +4,8 @@
     "jsx": "preserve",
     "paths": {
       "@styles/*": ["styles/*"],
-      "@utils/*": ["utils/*"]
+      "@customTypes/*": ["customTypes/*"],
+      "@utils": ["utils"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
