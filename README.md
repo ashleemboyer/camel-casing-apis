@@ -20,6 +20,15 @@ I started this project because I wanted to try solving a common problem with a s
 
 For the rest of this README I'll step through the commit history and detail all of the new things I learned and tripped on.
 
+## Table of Contents
+
+- [1. Set up a Next.js project with TypeScript](https://github.com/ashleemboyer/camel-casing-apis#1-set-up-a-nextjs-project-with-typescript)
+- [2. Adding an api utility](https://github.com/ashleemboyer/camel-casing-apis#2-adding-an-api-utility)
+- [3. Adding utils for normalizing the casing](https://github.com/ashleemboyer/camel-casing-apis#3-adding-utils-for-normalizing-the-casing)
+- [4. Updating api to use the new utils and type](https://github.com/ashleemboyer/camel-casing-apis#4-updating-api-to-use-the-new-utils-and-type)
+- [5. Adding Jest tests](https://github.com/ashleemboyer/camel-casing-apis#5-adding-jest-tests)
+- [6. Running the tests from a GitHub workflow](https://github.com/ashleemboyer/camel-casing-apis#6-running-the-tests-from-a-github-workflow)
+
 ## 1. Set up a Next.js project with TypeScript
 
 I usually start new Next.js projects with [their manual approach](https://nextjs.org/docs/getting-started#manual-setup) because doing things like this repetively helps me retain the information. So, I created a new directory a new directory called `camel-casing-apis`, and installed the `next`,  `react`,  `react-dom`, and `sass` packages.
